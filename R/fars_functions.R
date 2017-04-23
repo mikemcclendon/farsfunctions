@@ -1,8 +1,6 @@
 library(dplyr)
 library(maps)
 
-
-setwd(file.path('..', 'R'))
 #' Read in NHTSA FARS dataset CSV file as a data frame table (tbl_df) object
 #'
 #' This is a function that takes a filename of a CSV as an argument and reads it in
