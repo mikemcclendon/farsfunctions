@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"farsfunctions\"\nauthor: \"M. McClendon\"\ndate: \"2017-04-23\"\noutput: rmarkdown::html_vignette\nvignette: >\n  %\\VignetteIndexEntry{farsfunctions}\n  %\\VignetteEngine{knitr::rmarkdown}\n  %\\VignetteEncoding{UTF-8}\n---\nThis package is intended to read in and visualize incidents from the National Highway \nTraffic Safety Administration (NHTSA) Fatality Analysis Reporting System (FARS) data. The package contains five functions. However, 3 are of primary use for interrogating data. Those will be explained below. Please note: package assumes FARS data files in the standard format and naming convention are available in the user's working directory.\n\n## fars_summarize_years\nThis function returns a monthly summary of incidents. It takes a year in the form of an integer or string as an argument and then uses that value to read in a CSV as a tbl_df for data of that given year and and returns a monthly summary of the observations. Usage below.\n\n```{r, echo = FALSE, message=FALSE}\nlibrary(farsfunctions)\nlibrary(dplyr)\n```\n```{r}\nfars_summarize_years('2013')\n```\n## fars_read_years\nThis function returns the month and year corresponding to each FARS observation. It takes a year in the form of an integer or string as an argument and then uses that value to read in a CSV as a tbl_df for data of that given year and returns the month and year corresponding to each observation. \n\n```{r}\nfars_read_years('2013')\n```\n\n## fars_map_state\nReturn a map plot of incidents. This is a function that takes a state number and year in the form of an integer or string as an argument and then uses that value to generate a map plot of observations for that state and year.\n\n```{r, echo = FALSE}\nlibrary(farsfunctions)\nlibrary(dplyr)\nlibrary(maps)\n```\n```{r}\nfars_map_state(21, 2013)\n```\n",
+    "created" : 1492979230958.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2568357601",
+    "id" : "D12EF52E",
+    "lastKnownWriteTime" : 1492982876,
+    "last_content_update" : 1492984270069,
+    "path" : "~/projects/Coursera Mastering R/farsfunctions/vignettes/farsfunctions.Rmd",
+    "project_path" : "vignettes/farsfunctions.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
