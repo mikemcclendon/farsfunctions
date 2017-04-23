@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "Package: farsfunctions\nType: Package\nTitle: NHTSA FARS Functions\nVersion: 0.1.0\nAuthor: M. McClendon\nMaintainer: mike.mcclendon@gmail.com\nDescription: Analyses data from NHTSA FARS incidents. Visualizes state by state maps of incidents.\nLicense: GPL-3\nEncoding: UTF-8\nLazyData: true\nRoxygenNote: 6.0.1\nSuggests: knitr, rmarkdown\nVignetteBuilder: knitr\n",
+    "contents" : "Package: farsfunctions\nVersion: 0.1.0\nDate: 2017-04-23\nTitle: NHTSA FARS Functions\nAuthors@R: c(person(\"Mike\", \"McClendon\", role = c(\"aut\", \"cre\"),email = \"mike.mcclendon@gmail.com\"))\nAuthor: Mike McClendon [aut, cre]\nMaintainer: Mike McClendon <mike.mcclendon@gmail.com>\nDepends: R (>= 3.1.0), nlme\nSuggests: dplyr, maps\nDescription: Analyses data from NHTSA FARS incidents. Visualizes state by state maps of incidents.\nLicense: GPL (>= 2)\nURL: https://www.github.com/mikemcclendon\nBugReports: https://www.github.com/mikemcclendon\n",
     "created" : 1492983404580.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3889659370",
+    "hash" : "2576608957",
     "id" : "F9B3D66F",
-    "lastKnownWriteTime" : 1492986521,
-    "last_content_update" : 1492986521615,
+    "lastKnownWriteTime" : 1492987415,
+    "last_content_update" : 1492987415945,
     "path" : "~/projects/Coursera Mastering R/farsfunctions/DESCRIPTION",
     "project_path" : "DESCRIPTION",
     "properties" : {
