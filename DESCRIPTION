@@ -5,9 +5,7 @@ Title: NHTSA FARS Functions
 Authors@R: c(person("Mike", "McClendon", role = c("aut", "cre"),email = "mike.mcclendon@gmail.com"))
 Author: Mike McClendon [aut, cre]
 Maintainer: Mike McClendon <mike.mcclendon@gmail.com>
-Depends: R (>= 3.1.0), nlme
-Suggests: dplyr, maps
 Description: Analyses data from NHTSA FARS incidents. Visualizes state by state maps of incidents.
 License: GPL (>= 2)
 URL: https://www.github.com/mikemcclendon
-BugReports: https://www.github.com/mikemcclendon
+
