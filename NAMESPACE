@@ -4,4 +4,5 @@ export("fars_map_state")
 
 import(dplyr)
 import(maps)
-
+import(testthat)
+import(readr)

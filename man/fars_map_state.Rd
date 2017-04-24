@@ -28,6 +28,6 @@ and if there are no accidents to plot
 }
 \examples{
 fars_map_state(20, 2013)
-fars_summarize_years('20','2013')
+fars_map_state('20','2013')
 
 }
