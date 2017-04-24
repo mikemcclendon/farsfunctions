@@ -7,23 +7,23 @@
 fars_map_state(state.num, year)
 }
 \arguments{
-\item{state.num}{A numeric or string that corresponds to a 
+\item{state.num}{A numeric or string that corresponds to a
 given state in the data set.}
 
-\item{year}{A year passed as an argument in the form of an integer or string for which 
+\item{year}{A year passed as an argument in the form of an integer or string for which
 the data should be read in.}
 }
 \value{
-This function returns a plot of observations in the selected state will NULL 
+This function returns a plot of observations in the selected state will NULL
 class
 }
 \description{
-This is a function that takes a state number and year in the form of an integer or string as 
+This is a function that takes a state number and year in the form of an integer or string as
 an argument and then uses that value to generate a map plot of observations for that state.
 and year.
 }
 \details{
-This function will return an error message for invalid years, invalid state numbers, 
+This function will return an error message for invalid years, invalid state numbers,
 and if there are no accidents to plot
 }
 \examples{

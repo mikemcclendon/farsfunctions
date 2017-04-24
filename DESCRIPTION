@@ -9,3 +9,4 @@ Description: Analyses data from NHTSA FARS incidents. Visualizes state by state 
 License: GPL (>= 2)
 URL: https://www.github.com/mikemcclendon
 Imports: dplyr, maps
+RoxygenNote: 6.0.1

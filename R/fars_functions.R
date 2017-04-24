@@ -18,7 +18,7 @@ library(maps)
 #' @return This function returns a tbl_df object
 #'
 #' @examples
-#' fars_read("accident_2013.csv.bz2")
+#' fars_read('accident_2013.csv.bz2')
 #'
 #' @export
 
@@ -64,7 +64,7 @@ make_filename <- function(year) {
 #'
 #' @details This function will return an error message for invalid years.
 #'
-#' @param year A year passed as an argument in the form of an integer or string for which
+#' @param years A year passed as an argument in the form of an integer or string for which
 #' the data should be read in
 #'
 #' @importFrom dplyr
@@ -99,7 +99,7 @@ fars_read_years <- function(years) {
 #'
 #' @details This function will return an error message for invalid years.
 #'
-#' @param year A year passed as an argument in the form of an integer or string for which
+#' @param years A year passed as an argument in the form of an integer or string for which
 #' the data should be read in.
 #'
 #' @importFrom dplyr tidyr

@@ -7,18 +7,18 @@
 make_filename(year)
 }
 \arguments{
-\item{year}{A year passed as an argument in the form of an integer or string for which 
+\item{year}{A year passed as an argument in the form of an integer or string for which
 the filename should be labeled and formatted}
 }
 \value{
 This function returns a string
 }
 \description{
-This is a function that takes a year in the form of an integer or string as an argument 
+This is a function that takes a year in the form of an integer or string as an argument
 and then uses that value to print a standard filename for data of that given year.
 }
 \details{
-Errors: This function will result in errors to the functions that call it as a helper if values other 
+Errors: This function will result in errors to the functions that call it as a helper if values other
 years or other than years for which there is data are passed.
 }
 \examples{

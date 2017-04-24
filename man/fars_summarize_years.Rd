@@ -7,15 +7,15 @@
 fars_summarize_years(years)
 }
 \arguments{
-\item{year}{A year passed as an argument in the form of an integer or string for which 
+\item{years}{A year passed as an argument in the form of an integer or string for which
 the data should be read in.}
 }
 \value{
 This function returns a tbl_df object
 }
 \description{
-This is a function that takes a year in the form of an integer or string as an argument 
-and then uses that value to read in a CSV as a tbl_df for data of that given year and 
+This is a function that takes a year in the form of an integer or string as an argument
+and then uses that value to read in a CSV as a tbl_df for data of that given year and
 and returns a monthly summary of the observations.
 }
 \details{

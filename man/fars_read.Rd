@@ -14,15 +14,15 @@ This function returns a tbl_df object
 }
 \description{
 This is a function that takes a filename of a CSV as an argument and reads it in
-as a data frame table. Successful execution will result in a data frame table 
+as a data frame table. Successful execution will result in a data frame table
 object containing the CSV data.
 }
 \details{
-It will first check if the filename is valid and print a 
+It will first check if the filename is valid and print a
 warning and stop if it is not. The function will generate an error for invalid CSV
 inputs.
 }
 \examples{
-fars_read("accident_2013.csv.bz2")
+fars_read('accident_2013.csv.bz2')
 
 }
