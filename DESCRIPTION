@@ -8,7 +8,7 @@ Maintainer: Mike McClendon <mike.mcclendon@gmail.com>
 Description: Analyses data from NHTSA FARS incidents. Visualizes state by state maps of incidents.
 License: GPL (>= 2)
 URL: https://www.github.com/mikemcclendon
-Imports: dplyr, maps, readr
-Suggests: testthat
+Imports: dplyr, maps, readr, tidyr, stats, graphics
+Suggests: testthat, knitr, rmarkdown
 RoxygenNote: 6.0.1
 LazyData: TRUE
