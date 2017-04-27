@@ -21,7 +21,8 @@ library(stats)
 #' @return This function returns a tbl_df object
 #'
 #' @examples
-#' \dontrun{ fars_read('accident_2013.csv.bz2')
+#' \dontrun{
+#' fars_read('accident_2013.csv.bz2')
 #' }
 #' @export
 
@@ -49,7 +50,7 @@ fars_read <- function(filename) {
 #' @return This function returns a string
 #'
 #' @examples
-#' \dontrun {
+#' \dontrun{
 #' make_filename(2013)
 #' make_filename('2013')
 #' }
@@ -118,7 +119,7 @@ fars_read_years <- function(years) {
 #' @return This function returns a tbl_df object
 #'
 #' @examples
-#' \dontrun {
+#' \dontrun{
 #' fars_summarize_years(2013)
 #' fars_summarize_years('2013')
 #' }
@@ -156,7 +157,7 @@ fars_summarize_years <- function(years) {
 #' class
 #'
 #' @examples
-#' \dontrun {
+#' \dontrun{
 #' fars_map_state(20, 2013)
 #' fars_map_state('20','2013')
 #' }

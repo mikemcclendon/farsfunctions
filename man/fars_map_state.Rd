@@ -27,7 +27,7 @@ This function will return an error message for invalid years, invalid state numb
 and if there are no accidents to plot
 }
 \examples{
-\dontrun {
+\dontrun{
 fars_map_state(20, 2013)
 fars_map_state('20','2013')
 }

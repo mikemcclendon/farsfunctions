@@ -22,7 +22,7 @@ and returns a monthly summary of the observations.
 This function will return an error message for invalid years.
 }
 \examples{
-\dontrun {
+\dontrun{
 fars_summarize_years(2013)
 fars_summarize_years('2013')
 }
