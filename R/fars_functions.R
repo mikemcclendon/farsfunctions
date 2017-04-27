@@ -1,5 +1,7 @@
 library(dplyr)
 library(maps)
+library(graphics)
+library(stats)
 
 #' Read in NHTSA FARS dataset CSV file as a data frame table (tbl_df) object
 #'
@@ -13,13 +15,14 @@ library(maps)
 #'
 #' @param filename A string filename that corresponds to the CSV to be read in
 #'
-#' @importFrom readr
+#' @importFrom readr read_csv
+#' @importFrom dplyr tbl_df
 #'
 #' @return This function returns a tbl_df object
 #'
 #' @examples
-#' fars_read('accident_2013.csv.bz2')
-#'
+#' \dontrun{ fars_read('accident_2013.csv.bz2')
+#' }
 #' @export
 
 fars_read <- function(filename) {
@@ -46,8 +49,10 @@ fars_read <- function(filename) {
 #' @return This function returns a string
 #'
 #' @examples
+#' \dontrun {
 #' make_filename(2013)
 #' make_filename('2013')
+#' }
 #'
 #' @export
 
@@ -67,13 +72,16 @@ make_filename <- function(year) {
 #' @param years A year passed as an argument in the form of an integer or string for which
 #' the data should be read in
 #'
-#' @importFrom dplyr
+#' @importFrom dplyr %>% mutate select
+#' @importFrom stats setNames
 #'
 #' @return This function returns a list
 #'
 #' @examples
+#' \dontrun{
 #' fars_read_years(2013)
 #' fars_read_years('2013')
+#' }
 #'
 #' @export
 
@@ -102,14 +110,18 @@ fars_read_years <- function(years) {
 #' @param years A year passed as an argument in the form of an integer or string for which
 #' the data should be read in.
 #'
-#' @importFrom dplyr tidyr
+#' @importFrom dplyr %>% group_by bind_rows summarize
+#' @importFrom tidyr spread
+#' @importFrom stats setNames
 #'
 #'
 #' @return This function returns a tbl_df object
 #'
 #' @examples
+#' \dontrun {
 #' fars_summarize_years(2013)
 #' fars_summarize_years('2013')
+#' }
 #'
 #' @export
 
@@ -135,15 +147,19 @@ fars_summarize_years <- function(years) {
 #' @param year A year passed as an argument in the form of an integer or string for which
 #' the data should be read in.
 #'
-#' @importFrom maps dplyr
+#' @importFrom maps map
+#' @importFrom dplyr filter
+#' @importFrom graphics points
 #'
 #'
 #' @return This function returns a plot of observations in the selected state will NULL
 #' class
 #'
 #' @examples
+#' \dontrun {
 #' fars_map_state(20, 2013)
 #' fars_map_state('20','2013')
+#' }
 #'
 #' @export
 
