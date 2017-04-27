@@ -22,7 +22,9 @@ and returns the month and year corresponding to each observation.
 This function will return an error message for invalid years.
 }
 \examples{
+\dontrun{
 fars_read_years(2013)
 fars_read_years('2013')
+}
 
 }

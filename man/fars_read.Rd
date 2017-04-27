@@ -23,6 +23,6 @@ warning and stop if it is not. The function will generate an error for invalid C
 inputs.
 }
 \examples{
-fars_read('accident_2013.csv.bz2')
-
+\dontrun{ fars_read('accident_2013.csv.bz2')
+}
 }

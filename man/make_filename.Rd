@@ -22,7 +22,9 @@ Errors: This function will result in errors to the functions that call it as a h
 years or other than years for which there is data are passed.
 }
 \examples{
+\dontrun {
 make_filename(2013)
 make_filename('2013')
+}
 
 }
