@@ -1,10 +1,7 @@
 
 library(farsfunctions)
+library(testthat)
 
-
-testthat::expect_that(class(fars_read_years('2013')), testthat::equals('list'))
-
-testthat::expect_that(class(fars_summarize_years('2013')), testthat::equals(c('tbl_df', 'tbl', 'data.frame')))
-
-testthat::expect_that(class(fars_map_state(21, 2013)), testthat::equals('NULL'))
+expect_that(make_filename(2014), is_identical_to("accident_2014.csv.bz2"))
+expect_that(fars_read_years(2018), gives_warning())
 
