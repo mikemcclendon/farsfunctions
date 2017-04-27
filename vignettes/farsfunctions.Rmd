@@ -14,28 +14,10 @@ Traffic Safety Administration (NHTSA) Fatality Analysis Reporting System (FARS) 
 ## fars_summarize_years
 This function returns a monthly summary of incidents. It takes a year in the form of an integer or string as an argument and then uses that value to read in a CSV as a tbl_df for data of that given year and and returns a monthly summary of the observations. Usage below.
 
-```{r, echo = FALSE, message=FALSE}
-library(farsfunctions)
-library(dplyr)
-```
-```{r}
-fars_summarize_years('2013')
-```
 ## fars_read_years
 This function returns the month and year corresponding to each FARS observation. It takes a year in the form of an integer or string as an argument and then uses that value to read in a CSV as a tbl_df for data of that given year and returns the month and year corresponding to each observation. 
 
-```{r}
-fars_read_years('2013')
-```
 
 ## fars_map_state
 Return a map plot of incidents. This is a function that takes a state number and year in the form of an integer or string as an argument and then uses that value to generate a map plot of observations for that state and year.
 
-```{r, echo = FALSE}
-library(farsfunctions)
-library(dplyr)
-library(maps)
-```
-```{r}
-fars_map_state(21, 2013)
-```
