@@ -12,3 +12,4 @@ Imports: dplyr, maps, readr, tidyr, stats, graphics
 Suggests: testthat, knitr, rmarkdown
 RoxygenNote: 6.0.1
 LazyData: TRUE
+VignetteBuilder: knitr
