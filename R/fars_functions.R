@@ -89,6 +89,7 @@ make_filename <- function(year) {
 
 fars_read_years <- function(years) {
         year <- NULL
+        MONTH <- NULL
         lapply(years, function(year) {
                 file <- make_filename(year)
                 tryCatch({
@@ -131,6 +132,7 @@ fars_read_years <- function(years) {
 fars_summarize_years <- function(years) {
         MONTH <- NULL
         n <- NULL
+        year <- NULL
         dat_list <- fars_read_years(years)
         dplyr::bind_rows(dat_list) %>%
                 dplyr::group_by(year, MONTH) %>%
